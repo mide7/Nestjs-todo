@@ -2,7 +2,7 @@ import { TasksService } from "./task.service";
 export declare class TasksController {
     private readonly tasksService;
     constructor(tasksService: TasksService);
-    findAll(): Promise<"No tasks created yet" | import("./task.model").task[]>;
+    findAll(): Promise<import("./task.model").task[] | "No tasks created yet">;
     findOne(id: string): Promise<{
         id: string;
         todo: string;
